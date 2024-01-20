@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  list-style: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bolder; }
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.logo {
+  width: 50%;
+  height: 50%;
+  margin: 4%; }
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  background-color: #EAEAEA; }
+
+form
+form > input {
+  font-weight: 800;
+  background-color: #EAEAEA; }
+
+i {
+  margin-right: 1rem; 
+
+}
+
+i:hover {
+  color: #9356DC;
+}
+
+.carré {
+  position: absolute;
+  margin-right: 300px;
+  height: 25px;
+  width: 25px;
+  background-color: #9356DC;
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin-bottom: 5%; }
+
+h2 {
+  font-size: 1.4rem;
+  margin-left: 10%;
+  margin-top: 10%; }
+
+  h3 {
+    font-size: 1.6rem;
+    margin-left: 0;
+    margin-bottom: 5%;
+    margin-right: 10rem;
+    
+
+  }
+
+  
+
+
+.TitleDescription {
+  margin-bottom: 10%; }
+
+
+
+section {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 12%;
+  background: var(--Background, #F6F6F6); }
+
+input {
+  background-color: #EAEAEA; }
+
+button {
+  color: white;
+  width: 190px;
+  height: 50px;
+  border-radius: 25px;
+  background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 5%; }
+
+.part2 > section {
+  display: flex;
+  background: var(--Background, #F6F6F6); }
+
+  .carré > p {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+  }
+
+.part2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.rectangle1 { display: flex;
+ 
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  text-align: center;
+justify-content: center;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  width: 80%;
+  border-radius: 20px;
+  background: var(--Background, #F6F6F6);
+  /* Shadow/Instructions */
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15); }
+
+.rectangle2 { display: flex;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  margin-bottom: 3rem;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  border-radius: 20px;
+  background: var(--Background, #F6F6F6);
+  /* Shadow/Instructions */
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15); }
+
+.rectangle3 { display: flex;
+  margin-bottom: 3rem;
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  border-radius: 20px;
+  background: var(--Background, #F6F6F6);
+  /* Shadow/Instructions */
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15); }
+
+main {
+  background: var(--White, #FFF); }
+
+
+  .coeur { 
+    border: #9356DC;
+
+  }
+
+  .Cards {
+    
+    width: 100%;
+   
+    background-color: #FFFFFF;
+    border-radius: 20px;
+
+    margin-bottom: 10%;
+  }
+
+  .Cards > p {
+    margin-left: 5%;
+  }
+
+  .card-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  
+  }
+
+  .card-content > i {
+    padding-top: 10px;
+  }
+
+  .card-info {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+  .text-color {
+    color: #FFF;
+  }
+
+  .iconomf {
+    margin-left: 4%;
+  }
+
+  .titrefooter {
+    padding-top: 10px;
+    margin-bottom: 3%;
+    margin-left: 5%;
+    font-family: "Shrikhand", serif;
+    font-size: 20px;
+    color: #FFFFFF;
+  }
+
+  .footericon {
+    
+    
+    display: flex;
+    align-items: baseline;
+
+
+  }
+
+  .foot {
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+  }
+  .footericon > svg {
+    margin-right: 10px;
+  }
+
+footer {
+ padding-bottom: 5%;
+  background: var(--Grey, #353535); 
+color: #FFF;
+}
+
+footer > .Cards > p {
+  color: #FFF;
+}
+
+.imgfooter {
+  fill: #F6F6F6; }
