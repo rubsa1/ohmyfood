@@ -70,16 +70,12 @@
             background: #99E2D0;
         }
 
-        .foodcards {
-           margin: 5%; 
-            
-            
-        }
 
         H3 {
             margin-bottom: 10px;
             font-size: 15px;
             font-weight: lighter;
+            margin-left: 2%;
             
             
         }
@@ -88,27 +84,130 @@
           border-bottom: 2px solid #99E2D0 ;
 
         }
+        
+        .foodcards {
+        
+          
+           
+       }
 
         .Cards {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            justify-content: space-between;
             
             gap: 7px;
             padding: 4%;
+            margin: 2%;
             
+            height: 2rem;
             margin-bottom: 10px;
            
             background-color: #FFFFFF;
             border-radius: 20px;
             filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+            animation-fill-mode: backwards;
+            animation-iteration-count: 1;
+            animation: appear 2s;
             
           }
-          .price {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+
+
+
+          .delay1 {
+            animation-delay: 0.3s;
           }
+
+          .delay2 {
+            animation-delay: 0.5s;
+          }
+
+          .delay3 {
+            animation-delay: 0.7s;
+          }
+
+          .delay4 {
+            animation-delay: 0.9s;
+          }
+
+          .delay5 {
+            animation-delay: 1.1s;
+          }
+
+          .delay6 {
+            animation-delay: 1.3s;
+          }
+
+          .delay7 {
+            animation-delay: 1.5s;
+          }
+
+          .delay8 {
+            animation-delay: 1.7s;
+          }
+
+          .delay9 {
+            animation-delay: 1.9s;
+          }
+
+          
+
+          .menu{
+            display: flex;
+            flex-direction: column;
+
+          }
+
+          .price {
+            margin-top: 1%;
+            display: flex;
+          justify-content: space-between;
+            
+           
+          }
+
+          .card-content {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+          }
+
+
+        .check {
+          top: 0;
+          position: relative;
+          display: flex;
+          align-items: center;
+          
+          background-color: #99e2d0;
+          border-radius: 0 1rem 1rem 0;
+          height: 100%;
+          
+          right: 0;
+          padding: 4%;
+          margin-top: -4%;
+          margin-right: -4%;
+          transition: all 0.5s;
+        }
+
+        .check > div > i {
+          color: #99e2d0;
+        }
+
+        .check > div  {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #FFF;
+          height: 20px;
+          width: 20px;
+          border-radius: 25px;
+          
+
+        }
+                                /* 4Sec mettre transition */
+        :hover .cards {
+          margin-right: 0;
+        }
 
           .cards > .price {
             justify-content: space-between;
@@ -126,6 +225,37 @@
           .iconomf {
             margin-left: 4%;
           }
+
+
+
+          .like {
+            border: none;
+            color: transparent;
+            background-color: transparent;
+            -webkit-text-stroke: 2px black;
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+            cursor: pointer;
+        }
+        .like {
+            position: relative;
+            font-size: 1.4em;
+        }
+        
+        
+        .like:hover {
+          
+          background-image: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+          background-image: -o-linear-gradient(#9356DC, #FF79DA);
+          background-image: linear-gradient(#9356DC, #FF79DA);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-stroke: 0;
+          -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          transform: scale(1.3);
+        }
 
          
         
@@ -189,4 +319,18 @@
         
         .imgfooter {
           fill: #F6F6F6; }
+
+
+
+
+          @keyframes appear {
+            0% {
+              transform: scale(0);
+              opacity: 0;
+            }
+            100% {
+              transform: scale(1);
+              opacity: 1;
+            }
+          }
         
