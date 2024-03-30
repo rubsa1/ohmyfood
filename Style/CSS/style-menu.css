@@ -19,20 +19,42 @@
   
     header {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        justify-content: center; }
+        justify-content:space-between; 
+      
+      }
+        
       
       .logo {
         width: 50%;
         height: 50%;
-        margin: 4%; }
+        margin: 4%; 
+        margin-right: 180px;
+        margin-left: 20%;
+      
+      }
       
         img {
             width: 100%;
             height: 230px;
+            object-fit: cover;
         }
 
+
+        .arrow {
+          
+          display: flex;
+          margin-right: 10px;
+          margin-left: 10px;
+          width: 50px;
+          height: 70px;
+          align-items: center;
+          
+        
+        
+        
+        }
 
 
 
@@ -49,7 +71,7 @@
           .title {
             display: flex;
             align-items: center;
-            
+            justify-content: space-between;
             margin-bottom: 3%;
             margin-left: 5%;
             font-family: "Shrikhand", serif;
@@ -105,9 +127,12 @@
             background-color: #FFFFFF;
             border-radius: 20px;
             filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-            animation-fill-mode: backwards;
+            transform: scale(0);
+            
+            animation: appear 1s;   /* mettre les animations apres le kframes*/
+            animation-fill-mode: both;
             animation-iteration-count: 1;
-            animation: appear 2s;
+
             
           }
 
@@ -161,8 +186,16 @@
             margin-top: 1%;
             display: flex;
           justify-content: space-between;
-            
-           
+          
+          }
+
+
+          .ellipsis {
+            text-overflow: ellipsis;
+            width: 85%;
+            max-width: 85%;
+            overflow: hidden;
+            white-space: nowrap;
           }
 
           .card-content {
@@ -172,21 +205,26 @@
           }
 
 
-        .check {
-          top: 0;
-          position: relative;
-          display: flex;
-          align-items: center;
-          
-          background-color: #99e2d0;
-          border-radius: 0 1rem 1rem 0;
-          height: 100%;
-          
-          right: 0;
-          padding: 4%;
-          margin-top: -4%;
-          margin-right: -4%;
-          transition: all 0.5s;
+          .check {
+            top: 0;
+            position: relative;
+            display: flex;
+            align-items: center;
+        
+            background-color: #99e2d0;
+            border-radius: 0 1rem 1rem 0;
+            height: 100%;
+        
+            width: 0;
+            opacity: 0;
+
+            right: 0;
+            padding: 4.5%;
+            margin-top: -4.5%;
+            margin-right: -6%;
+            
+            transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+            
         }
 
         .check > div > i {
@@ -205,9 +243,13 @@
 
         }
                                 /* 4Sec mettre transition */
-        :hover .cards {
-          margin-right: 0;
+     .Cards:hover .check {
+        margin-right: -6%;
+        width: 5%;
+        opacity: 1;
         }
+
+        
 
           .cards > .price {
             justify-content: space-between;
@@ -217,6 +259,7 @@
 
         .bold {
             font-weight: bold;
+            
           }
           .text-color {
             color: #FFF;
@@ -296,6 +339,7 @@
           }
 
         button {
+          cursor: pointer;
             color: white;
             width: 250px;
             height: 60px;
@@ -308,6 +352,7 @@
 
         
         footer {
+          
          padding-bottom: 5%;
           background: var(--Grey, #353535); 
         color: #FFF;
@@ -334,3 +379,213 @@
             }
           }
         
+
+
+
+
+          @media (max-width: 1024px) {
+
+            .logo {
+              margin-right: 375px;
+              width: 24%;
+              
+            }
+
+            .title {
+              justify-content: center;
+              
+            }
+
+            h3 {
+              margin-left: 3%;
+            }
+
+
+            section {
+
+
+              width: 70%;
+              margin-left: 15%;
+            }
+
+
+
+
+            h3 {
+              margin-left: 16%;
+              margin-top: 2%;
+
+
+
+            }
+
+
+            
+
+
+            .Cards {
+              padding: 1% 3% 1% 3%;
+              width: 60%;
+              margin-left: 16%;
+              height: 3rem;
+            }
+
+            .check {
+              margin-top: -1.5%;
+              padding: 1.5%;
+            }
+
+
+            .Cards:hover .check {
+
+              width: 10%;
+            }
+
+            .check > div { 
+              
+              margin-left: 30%; 
+            }
+
+
+
+
+
+
+            .foot {
+              width: 100%;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+            }
+      
+            footer {
+              padding: 0;
+              display: flex;
+      
+              flex-direction: row-reverse;
+            }
+      
+            .footerP {
+              display: flex;
+              width: 50%;
+              align-items: center;
+      
+            }
+      
+      
+            .titrefooter {
+              margin-top: 3%;
+              margin-right: 5%;
+            }
+
+
+
+
+            
+
+          }
+
+
+
+
+
+
+
+          @media (min-width:1440px) {
+
+            img {  
+              height: 300px;
+
+
+             }
+
+            .logo {
+              width: 30%;
+              margin: 2%;
+              margin-right: 450px;
+            }
+
+            section {
+
+
+              width: 70%;
+              margin-left: 15%;
+            }
+
+            .title {
+
+              justify-content: center;
+             
+
+        
+            }
+
+            h3 {
+              margin-left: 16%;
+              margin-top: 2%;
+
+
+
+            }
+
+
+            
+
+
+            .Cards {
+              padding: 1% 3% 1% 3%;
+              width: 60%;
+              margin-left: 16%;
+              height: 3rem;
+            }
+
+            .check {
+              margin-top: -1.5%;
+              padding: 1.5%;
+            }
+
+
+            .Cards:hover .check {
+
+              width: 10%;
+            }
+
+            .check > div { 
+              
+              margin-left: 30%; 
+            }
+
+
+
+
+
+
+
+              .foot {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+              }
+        
+              footer {
+                padding: 0;
+                display: flex;
+        
+                flex-direction: row-reverse;
+              }
+        
+              .footerP {
+                display: flex;
+                width: 50%;
+                align-items: center;
+        
+              }
+        
+        
+              .titrefooter {
+                margin-top: 3%;
+                margin-right: 5%;
+              }
+
+          }
