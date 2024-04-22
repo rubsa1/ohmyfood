@@ -1,0 +1,45 @@
+.check {
+    top: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    background-color: #99e2d0;
+    border-radius: 0 1rem 1rem 0;
+    height: 100%;
+
+    width: 0;
+    opacity: 0;
+
+    right: 0;
+    padding: 4.5%;
+    margin-top: -4.5%;
+    margin-right: -6%;
+    
+    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    div  {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #FFF;
+        height: 20px;
+        width: 20px;
+        border-radius: 25px;
+        i {
+            color: #99e2d0;
+          }
+    }
+}
+
+
+                        /* 4Sec mettre transition */
+.Cards {
+    &:hover {
+    .check  {
+    margin-right: -6%;
+    width: 5%;
+    opacity: 1;}
+    
+    }
+
+}

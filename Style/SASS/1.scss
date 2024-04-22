@@ -1,3 +1,29 @@
+@import "view/home";
+@import "view/restaurant";
+@import "component/arrow";
+@import "component/check";
+@import "component/like";
+@import "component/loader";
+@import "component/new";
+@import "component/arrow";
+@import "utils/variable";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +53,8 @@ header {
     justify-content: center;
    
 }
-        .logo { 
+
+.logo { 
     width: 50%;
     height: 50%;
     margin: 4%;
@@ -43,22 +70,18 @@ header {
 
     form
     
-    form > input {
+    form {
+     input {
         font-weight: 800;
         background-color: #EAEAEA
+    }
+        
     }
     
     i {
         margin-right: 1rem;
-        transform: translateY(-50%);
+
     }
-
-
-    
-
-    
-
-    
 
 
     h1{
@@ -94,6 +117,7 @@ header {
 
     button {
         color: white;
+        
         width: 190px;
         height: 50px;
         border-radius: 25px;
@@ -104,6 +128,7 @@ header {
 
     .part2 > section {
         display: flex;
+        
         background: var(--Background, #F6F6F6)
     }
     
@@ -112,10 +137,7 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        .part2 > section {
-            display: flex;
-            background: var(--Background, #F6F6F6)
-        }
+
     }
     .rectangle1 {
         margin-bottom: 3rem;
@@ -124,6 +146,7 @@ header {
         padding-top: 6%;
         padding-bottom: 6%;
        width: 80%;
+      
         border-radius: 20px;
         background: var(--Background, #F6F6F6);
         /* Shadow/Instructions */
@@ -138,6 +161,7 @@ header {
         margin-bottom: 3rem;
         text-align: center;
         width: 80%;
+       
         border-radius: 20px;
         background: var(--Background, #F6F6F6);
         /* Shadow/Instructions */

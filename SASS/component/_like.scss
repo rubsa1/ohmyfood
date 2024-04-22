@@ -27,3 +27,29 @@
   -ms-transform: scale(1.1);
   transform: scale(1.3);
 }
+
+
+
+.coeur { 
+  border: #9356DC;
+
+}
+
+                          //*   ICI JE FAIS WHAT *//
+
+.like {
+  border: none;
+  color: transparent;
+  background-color: transparent;
+  -webkit-text-stroke: 2px black;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  cursor: pointer;
+}
+.like {
+  position: relative;
+  font-size: 1.4em;
+}
+
+
