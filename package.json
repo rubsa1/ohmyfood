@@ -3,7 +3,7 @@
     "node-sass": "^9.0.0"
   },
   "scripts": {
-    "SASS":"C:/Users/monni/Desktop/WEB/ohmyfood/node_modules/.bin/node-sass ./Style/SASS/1.scss ./Style/CSS/style_test.css -w" ,
+    "SASS":"C:/Users/monni/Desktop/WEB/ohmyfood/node_modules/.bin/node-sass ./SASS/1.scss ./Style/CSS/style_test.css -w" ,
     "SASS_menu":"C:/Users/monni/Desktop/WEB/ohmyfood/node_modules/.bin/node-sass ./Style/SASS/2.scss ./Style/CSS/style-menu.css -w"
   }
   }
